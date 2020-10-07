@@ -3,18 +3,9 @@
    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css"> -->
-   <!-- <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-   <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css"> -->
 	<link rel="stylesheet" media="all" href="resources/css/styles.css">
 
-	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-   <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
-   <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-   <link rel="stylesheet" type="text/css" href="resources/css/mqueries.css"> -->
-	<!-- <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'> -->
-		  
-	<!-- <link rel="stylesheet" href="http://use.fontawesome.com/releases/v5.6.3/css/all.css"> -->
+
 	<script src="https://kit.fontawesome.com/792cf67a6b.js" crossorigin="anonymous"></script>
 
    <title>Vicky Lawrence Schools</title>
@@ -26,7 +17,7 @@
 			<div class="call-box">	
 				<a href="tel:+234 - 805 573 9873">
 					<svg class="mail-icon">
-						<use xlink:href="vendors/icons/sprite.svg#icon-phone"></use>
+						<use xlink:href="vendors/vls-icons/sprite.svg#icon-phone"></use>
 					</svg> 
 					<span class="contact-p"> +234 - 805 573 9873 &nbsp; <span class="divider-1"> / </span></span> 
 				</a>
@@ -34,31 +25,32 @@
 			<div class="mail-us">
 				<a href="mailto:info@vickylawrenceschool.com">
 					<svg class="mail-icon">
-						<use xlink:href="vendors/icons/sprite.svg#icon-mail"></use>
+						<use xlink:href="vendors/vls-icons/sprite.svg#icon-mail"></use>
 					</svg> <span class="contact-m">info@vickylawrenceschools.com</span> 
 				</a>
 			</div>
 		</div>
 
 		<div class="social-links">
-			<div class="links">		
+		
+			<div class="links">
 				<a href="##" target="_blank">
 					<svg class="links-icon skype">
-						<use xlink:href="vendors/icons/sprite.svg#icon-skype-with-circle"></use>
+						<use xlink:href="vendors/vls-icons/sprite.svg#icon-skype-with-circle"></use>
 					</svg>
 				</a>
-			</div>
+			</div> 
 			<div class="links">
 				<a href="##" target="_blank">
 					<svg class="links-icon facebook">
-						<use xlink:href="vendors/icons/sprite.svg#icon-facebook-with-circle"></use>
+						<use xlink:href="vendors/vls-icons/sprite.svg#icon-facebook-with-circle"></use>
 					</svg>
 				</a>
 			</div> 
 			<div class="links">
 					<a href="##" target="_blank">
 					<svg class="links-icon twitter">
-						<use xlink:href="vendors/icons/sprite.svg#icon-twitter-with-circle"></use>
+						<use xlink:href="vendors/vls-icons/sprite.svg#icon-twitter-with-circle"></use>
 					</svg>
 				</a>
 			</div>
@@ -83,28 +75,26 @@
 							<li><a href="#" class="menus">Home</a></li>
 							<li><a href="#" class="menus">About</a></li>
 							<li class="dropdown">
-								<a href="#" class="sub-menu-toggle menus">Schools <i class="fas fa-caret-down"></i></a>
-							<ul class="sub-menu">
-								<li><a href="#">Primary</a></li>
-								<li><a href="#">High School</a></li>
-								<li><a href="#">Vocational School</a></li>
-								<li><a href="#">Technology school</a></li>
-							</ul>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="menus">Academics <i class="fas fa-caret-down"></i></a>
+								<a href="#" class="sub-menu-toggle menus">Schools <svg class="down-arrow">
+									<use xlink:href="vendors/vls-icons/sprite.svg#icon-triangle-down"></use></svg>
+								</a>
 								<ul class="sub-menu">
-									<li><a href="#">Our Curriculum</a></li>
-									<li><a href="#">E-Learning</a></li>
+									<li><a href="#">Primary</a></li>
+									<li><a href="#">High School</a></li>
+									<li><a href="#">Vocational School</a></li>
+									<li><a href="#">Technology school</a></li>
 								</ul>
 							</li>
-							<li class="dropdown menus"><a href="#">Admissions <i class="fas fa-caret-down"></i></a>
+							<li class="dropdown menus"><a href="#">Admissions <svg class="down-arrow">
+								<use xlink:href="vendors/vls-icons/sprite.svg#icon-triangle-down"></use> </svg>
+								</a>
 								<ul class="sub-menu sch-ads">
 									<li><a href="#">Primary</a></li>
 									<li><a href="#">High School</a></li>
 									<li><a href="#">Technology</a></li>
 								</ul>
 							</li>
+							<li><a href="#" class="menus">Testimonial</a></li>
 							<li><a href="#" class="menus">Contact Us</a></li>
 						</ul>
 					</div>
@@ -114,7 +104,6 @@
 
 		<div class="text-box">
 			<h1>Vicky Lawrence Schools <span class="dot">.</span> <br>    &nbsp; &nbsp; &nbsp;<span class="vls">....</span> <span class="leaders"> Building Tomorrow Leaders </span></h1>
-			<!-- <p class="leaders"><span class="vls">....</span> Building Tomorrow Leaders</p> -->
 			<a class="btn btn-full js--scroll-to-plans" href="#">Visit Our Schools</a>
 		</div>
 	</header> <!-- END MAIN Navigation BAR -->
@@ -158,7 +147,10 @@
 	<!-- VICKY LAWRENCE SCHOOLS -->
 	<section class="section-allSchools" id="all-schools">
 		<div class="vls-sch-title">
-			<h2> <i class="fas fa-graduation-cap grad-cap"></i> Vicky Lawrence Schools <span class="underline-after"></span> </h2>
+			<svg class="vls-schLogo">
+				<use xlink:href="vendors/vls-icons/sprite.svg#icon-graduation-cap"></use>
+			</svg>
+			<h2> Vicky Lawrence Schools <span class="underline-after"></span> </h2>
 		</div>
 				
 		<div class="sch-items js--wp-1">
@@ -167,7 +159,6 @@
 					<h3 class="sch-titles">
 						Primary School. 
 					</h3>
-					<!-- <img src="resources/css/img/n-students.jpg" alt="Proprietor Image" class="vls-img"> -->
 					<img src="resources/css/img/vocational-t-competition.jpg"  alt="Proprietor Image" class="vls-img">
 					<p class="vls-values">
 						We believed that any students with a solid foundation well rooted on a stable and dense soil strata enjoy his or her design purpose in life. We replicate this in our kids at the inception and prepared them for academic challenges.
@@ -179,7 +170,6 @@
 					<h3 class="sch-titles">
 						High School
 					</h3>
-					<!-- <img src="resources/css/img/hs-students.jpg" alt="High School Image" class="vls-img"> -->
 					<img src="resources/css/img/vocational-t-competition.jpg"  alt="Proprietor Image" class="vls-img">
 					<p class="vls-values">
 						Our high Schools students performance and awards winning records speaks for themselves and our alaumini leadership roles in their endeavour watered our hearts with joy. 
@@ -202,7 +192,6 @@
 					<h3 class="sch-titles">
 						School of Technology
 					</h3 class="">
-					<!-- <img src="resources/css/img/tech.jpg" alt="Proprietor Image" class="vls-img"> -->
 					<img src="resources/css/img/vocational-t-competition.jpg"  alt="Proprietor Image" class="vls-img">
 					<p class="vls-values">
 						We catch them young at Vicky Lawrence School of Technology and bring out the tech genius in our wards with world class,  experienced and professional instructors. Nevertheless we firmly believed learning is for all ages.
@@ -223,22 +212,26 @@
 			<div class="all-awards" >
 				<div class="high-sch-award equal-1">					
 					<i class="fas fa-graduation-cap grad-cap"></i>
+					<svg class="award-icons">
+						<use xlink:href="vendors/vls-icons/sprite.svg#icon-award"></use>
+					</svg> 
 					<h3 class="award-type vls-pry-sch">
 						Vicky Lawrence High School student emerges winner in Lagos state junior secondary school spelling bee competition.
 					</h3>
-					<!-- <img src="resources/css/img/n-students.jpg" alt="Proprietor Image" class="vls-img"> -->
 					<img src="resources/css/img/award3.jpg"  alt="Award Photo" class="award-img vls-img">
 					<p class="award-descriptions vls-values">
 						Emeka Uzordinma of Vicky Lawrence High School,CMD Road, Magodo, Lagos State clinched the winner prize in the 2020 secondary school Chess competition game organized by the Lagos Chamber of Commerce and Industry (LCCI).Eemeka emerged first without loosing any game, in the keenly contested chess game. while Peter from Bright Rays College, Ikorodu, Lagos State emerged as the second prize winner.  	
 					</p>
 					<a class="btn-schools btn-full js--scroll-to-plans" href="#">Visit School</a>
 				</div>
-
+				
 				<div class=" admissions equal-2">
+					<svg class="award-icons">
+						<use xlink:href="vendors/vls-icons/sprite.svg#icon-ticket"></use>
+					</svg> 
 					<h3 class="sch-admissions sch-titles">
 						Admission 
 					</h3>
-					<!-- <img src="resources/css/img/hs-students.jpg" alt="High School Image" class="vls-img"> -->
 					<img src="resources/css/img/vocational-t-competition.jpg"  alt="award photo" class="award-img vls-img">
 					<p class="award-descriptions vls-values">
 						The 2020/2021 academic session admission for JSS1 is currently on. Parents whose children have been offered admission can come to the school for their admission letters and other admission procedures.We say congratulations to all our new students.
@@ -246,10 +239,12 @@
 					<a class="btn-schools btn-full js--scroll-to-plans" href="#">Visit School</a>
 				</div>
 				<div class=" tech-awards equal-3">
+					<svg class="award-icons">
+						<use xlink:href="vendors/vls-icons/sprite.svg#icon-award"></use>
+					</svg> 
 					<h3 class="award-type sch-titles">
 						Vicky Lawrence School of Technology students won Microsoft ignite coding challenge.
 					</h3 class="">
-					<!-- <img src="resources/css/img/tech.jpg" alt="award photo" class="vls-img"> -->
 					<img src="resources/css/img/award1-960x640.jpg"  alt="award photo" class="award-img vls-img">
 					<p class="award-descriptions vls-values">
 						Winners have emerged in the 2020 Microsoft ignite coding challenge organized and suponsor by Microsoft and AlgoExpert. John Johnson and Basirat Musa of Vicky Lawrence School of technology emmerged as the first and second prize winners and also with a previledge to work with microsoft after graduation.
@@ -374,28 +369,28 @@
 					<li>
 						<a href="##" target="_blank">
 							<svg class="link-sicon facebook">
-								<use xlink:href="vendors/icons/sprite.svg#icon-facebook-with-circle"></use>
+								<use xlink:href="vendors/vls-icons/sprite.svg#icon-facebook"></use>
 							</svg>
 						</a>
 					</li>
 					<li>
 						<a href="##" target="_blank">
 							<svg class="link-sicon twitter">
-								<use xlink:href="vendors/icons/sprite.svg#icon-twitter-with-circle"></use>
+								<use xlink:href="vendors/vls-icons/sprite.svg#icon-twitter"></use>
 							</svg>
 						</a>
 					</li>
 					<li>
 						<a href="##" target="_blank">
 							<svg class="link-sicon skype">
-								<use xlink:href="vendors/icons/sprite.svg#icon-skype-with-circle"></use>
+								<use xlink:href="vendors/vls-icons/sprite.svg#icon-skype-with-circle"></use>
 							</svg>
 						</a>
 					</li>
 					<li>
 						<a href="##" target="_blank">
 							<svg class="link-sicon linkedin">
-								<use xlink:href="vendors/icons/sprite.svg#icon-linkedin"></use>
+								<use xlink:href="vendors/vls-icons/sprite.svg#icon-linkedin"></use>
 							</svg>
 						</a>
 					</li>

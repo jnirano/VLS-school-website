@@ -5,8 +5,9 @@
 	1.	Deeppink
 	*/  
 	--color-primary-1: #ff1493;
+	--color-primary-2: #fcf;
 	--color-primary-3: #fa65b5;
-	--color-primary-2: #f183bef1;
+	--color-primary-4: #f183bef1;
   
    --color-text-1: #888;
    --color-text-2:#373f49;
@@ -56,11 +57,6 @@ body {
 	background-color: var(--color-background-4);
 	line-height: 1.75;
 }
-
-/* .row{
-	margin: 0 auto;
-	max-width: 1200%;
-} */
 
 /* ******* REUSABLE COMPONENTS NORMALIZED STYLES ******* */
 a{	text-decoration: none;}
@@ -114,15 +110,7 @@ span.underline-after {
 	margin: 0 auto;
 	margin-top: 15px;
 }
-/* h2:after{
-	content: " ";
-	display: block;
-	width: 50px;
-	height: 3px;
-	background-color: var(--color-primary-3);
-	margin: 0 auto;
-	margin-top: 20px;
-}  */
+
 h3 {
 	font-size: 200%;
 	margin-bottom: 15px;
@@ -139,7 +127,6 @@ h3 {
 .call-us,
 .social-links {
 	display: flex;
-	/* justify-content: space-between; */
 	align-items: center;
 }
 
@@ -156,6 +143,13 @@ h3 {
 	margin-left: 1rem;
 	font-size: 1.6rem;
 }
+
+.down-arrow {
+	height: 1.8rem;
+	width: 1.8rem;
+	fill: var(--color-background-4);
+}
+
 .contact-p,
 .contact-m,
 .divider-1{	color: var(--color-text-3);}
@@ -166,8 +160,8 @@ h3 {
 	transition: color 0.3s;
 }
 .links-icon {
-	height: 3rem;
-	width: 2.5rem;
+	height: 2.9rem;
+	width: 2.9rem;
 	fill: var(--color-text-3);
 }
 
@@ -177,9 +171,11 @@ h3 {
 .skype:hover {fill:var(--social-skype);}
 .facebook:hover {fill: var(--social-facebook);}
 .twitter:hover {fill: var(--social-twitter);}
+.linkedin:hover {fill: var(--social-linkedin);}
 
 .skype:hover,
 .facebook:hover,
+.linkedin:hover,
 .twitter:hover { transition: color 0.2s;}
 
 /* +++++++	*******  
@@ -310,9 +306,11 @@ header {
 .navbar .navbar-nav ul > li > a:hover::before{
 	width: 100%;
 }
-.navbar .navbar-nav ul > li > a:hover{
+.navbar .navbar-nav ul > li > a:hover,
+.navbar .navbar-nav ul > li svg:hover {
 	font-weight: bold;
-	color: #fcf;
+	color: var(--color-primary-2);
+	fill: var(--color-primary-2);
 }
 
 .navbar .navbar-nav ul > li > .sub-menu{
@@ -391,7 +389,7 @@ header {
   	margin:0;
   }
   .navbar .navbar-nav ul > li > a::before{
-     content: none;
+   content: none;
   }
   .navbar .navbar-nav ul > li > a {
     padding: 12px 15px;
@@ -520,13 +518,24 @@ VICKY LAWRENCE SCHOOLS
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	/* background-color: #f4f4f4; */
 	background-color: #f8f8f8ee;
 }
 .all-programs {
 	display: flex;
 	justify-content: center;
 	padding: 1.2rem;
+	margin-top: 25px;
+}
+.vls-schLogo {
+	height: 6rem;
+	width: 6rem;
+	fill: var(--color-primary-3);
+	margin-right: 20px;
+}
+.vls-sch-title {
+	display: flex;
+	justify-content: center;
+	text-align: center;
 }
 .vls-segments {
 	border: 1px solid rgba(129, 127, 127, .65);
@@ -600,6 +609,12 @@ NEWS AND EVENTS
 	justify-content: center;
 	padding: 1rem;
 }
+.award-icons {
+	height: 5rem;
+	width: 5rem;
+	fill: var(--color-primary-3);
+	margin-bottom: 20px;
+}
 .high-sch-award, 
 .admissions,
 .tech-awards {
@@ -663,7 +678,7 @@ PARENT TESTIMONIALS
 
 .testimonial-items h4 {
 	font-size: 13px;
-	margin: 6px 0px 1px 0px;
+	margin: 13px 0px 1px 0px;
 	letter-spacing: .2px;
 	line-height: 10px;
 }
@@ -885,7 +900,7 @@ footer {
 
 .link-sicon {
 	height: 2.5rem;
-	width: 2.5rem;git add
+	width: 2.5rem;														
 	fill: #888888;
 }
 
