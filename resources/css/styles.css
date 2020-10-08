@@ -3,7 +3,7 @@
 2. Adding Sticky nav & Hamburger nav for mobile  
 3. Adding Cool effect on all sections except footer using JS & CSS 
 3a. Adding image slider for home background image and for our parent testimonial
-4. Optimization
+4. Optimization push
 5. Make the website accessible on internet using github
 */
 
@@ -573,6 +573,9 @@ VICKY LAWRENCE SCHOOLS
 	display: block;
 	transition: transform .8s;
 }
+/* .photo {
+	height: 40%;
+} */
 .vls-img:hover { transform: translateY(-1.1rem) scale(1.05);}
 .vls-values {
 	font-size: 1.5rem;
