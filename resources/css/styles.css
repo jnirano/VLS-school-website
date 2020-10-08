@@ -1,3 +1,12 @@
+/* 	TO DO LIST
+1. Responsive design 
+2. Adding Sticky nav & Hamburger nav for mobile  
+3. Adding Cool effect on all sections except footer using JS & CSS 
+3a. Adding image slider for home background image and for our parent testimonial
+4. Optimization
+5. Make the website accessible on internet using github
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
 
 :root {
@@ -8,6 +17,7 @@
 	--color-primary-2: #fcf;
 	--color-primary-3: #fa65b5;
 	--color-primary-4: #f183bef1;
+	--color-primary-a: #ff1491c2;
   
    --color-text-1: #888;
    --color-text-2:#373f49;
@@ -837,11 +847,10 @@ input{
 	background-color: var(--color-primary-1);
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
 }
-
 .submit:hover{
 	border: 1px solid var(--color-primary-1);
-	background-color: #f8f8f8ee;
-	color: var(--color-primary-1);
+	background-color:var(--color-primary-a);
+	color: var(--color-background-5);
 	cursor: pointer;
 }
 
@@ -882,22 +891,6 @@ footer {
 	display: inline-block;
 	margin-right: 25px;
 }
-
-/* .footer-nav li:last-child,
-.social-links li:last-child {
-   margin-right: 0;
-} */
-
-/* .links-icon {
-	color: red;
-	transition: color 0.2s;
-	height: 1.5rem;
-	width: 1.5rem;
-	fill: #888;
-	font-size: 4rem;
-
-} */
-
 .link-sicon {
 	height: 2.5rem;
 	width: 2.5rem;														
@@ -919,26 +912,23 @@ footer {
    color: #ecebeb;
 }
 
-/* .social-links li a:link,
-.social-links li a:visited {
-   font-size: 170%;
-} */
-
-/* .ion-social-facebook,
-.ion-social-twitter,
-.ion-social-googleplus,
-.ion-social-instagram {
-   transition: color 0.2s;
-} */
-
-/* .ion-social-facebook:hover { color: var(--social-facebook);}
-.ion-social-twitter:hover { color: var(--social-twitter);}
-.ion-social-linkedin:hover {  color: var(--social-linkedin);}
-.ion-social-skype:hover { color: var(--social-skype);}
-.ion-social-instagram:hover {	color:var(--social-instagram);} */
-
 .footer-para {
 	color: #888;
 	text-align: center;
 	margin-top: 2px;
 }
+
+/*********  ANIMATION EFFECT USING JQUERY & CSS To TRIGGER ANIMATIONS ********/
+.js--wp-b,
+.js--wp-1,
+.js--wp-c {
+  opacity: 1;
+  animation-duration: 1s;
+}
+
+.js--wp-d.animated {  opacity: 1;}
+
+.js--wp-a,
+.js--wp-d,
+.js--wp-e,
+.js--wp-f.animated {  animation-duration: 1.5s;}
