@@ -573,9 +573,7 @@ VICKY LAWRENCE SCHOOLS
 	display: block;
 	transition: transform .8s;
 }
-/* .photo {
-	height: 40%;
-} */
+
 .vls-img:hover { transform: translateY(-1.1rem) scale(1.05);}
 .vls-values {
 	font-size: 1.5rem;
