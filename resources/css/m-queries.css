@@ -10,21 +10,234 @@
 
 
 
-/* Small tablet to big tablet: from 768px to 1023px */
+/* Small tablet to big tablet:- from 768px to 1023px . This will target IPad in the protrate mode but IPad in landscape view has 1024px */
 @media only screen and (max-width: 1023px) {
 
    
 }
 
-/* Small phones to small tablets: from 481px to 767px */
+/* Small phones to small tablets :- for width of smaller than the ipad of width 768px: from 481px to 767px */
 @media only screen and (max-width: 767px) {
 
 
 }
 
-/* Small phones: from 0 to 480px */
+/* Small phones for width of old iphone 5 & 6: from 0 to 480px */
 @media only screen and (max-width: 480px) {
-   section { padding: 25px 0; }
-   .contact-form {width: 100%; }
+    .header-contact {
+        height: 10em;
+        padding: .5rem 2.1rem;
+    }
 
+    .header-contact,
+    .call-us {
+        display: flex;
+        flex-direction: column;
+    }
+    .divider-1{ display: none;}
+
+    .header-contact,
+    .call-us,
+    .social-links {
+        align-items: flex-start
+    }
+    .social-links {
+       margin: .8rem 2rem;
+    }
+    .mail-us { margin-left: 0rem;}
+    .mail-icon { margin-top: .8rem;}
+    .mail-icon, 
+    .call-icon {
+        height: 1.15rem;
+        width: 1.15rem;
+    }
+    .links-icon {
+        height: 1.73em;
+        width: 1.73rem;
+    }
+    .links:not(:last-child) { margin-right: 2rem;}
+    .call-box,
+    .contact-m{font-size: 1.32rem;}
+    
+    .logo a .logo-brand { height: 75px; }
+    
+    .text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 10px 10px 5px;
+    }
+    h1 {
+        margin-top: 10px;
+        margin-bottom: 50px;
+        font-size: 2.15rem;
+        word-spacing: 1.2px;
+    }
+    .leaders { font-size: 1.4rem;}
+    .btn:link,
+    .btn:visited {
+        padding: 7px 15px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        border: 1px solid var(--color-background-4);
+    }
+    .btn:hover,
+    .btn:active {
+        background-color: var(--color-background-4);
+        color: var(--color-primary-1);
+        border: 1px solid var(--color-primary-3);
+    }
+
+    /* +++++++	*******  
+    ABOUT VICKY LAWRENCE
+    +++++++	******* */
+    .principal-brief{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 1.5%;
+    }
+    .principal {
+        width: 95%;
+        margin-left: 2.8%;
+    }   
+    .sch-welcome h3 {	
+        font-weight: 450;
+        margin-top: 10px;
+    }
+    .our-schPrincipal { font-size: 115%;}
+    .name{
+        font-size: 120%;
+        margin-top: 2px;
+    }
+    h2 {
+        font-size: 2rem;
+        word-spacing: 1.3px;
+        margin-bottom: 10px;
+        letter-spacing: .9px;
+    } 
+    h3 {
+        font-size: 1.44rem;
+        margin-bottom: 6.5px;
+        margin-left: 2.8%;
+    }
+    .paragraphs {
+        font-size: 1.3rem;
+        line-height: 175%;
+        width: 100%;
+        padding: 0 3% ;
+    }
+    .btn-read{
+        margin: 3.5% 4%;
+        letter-spacing: .6px;
+        border-radius: 5px;
+        font-size: 1.36rem;
+    }
+
+    /* +++++++	*******  
+    VICKY LAWRENCE SCHOOLS
+    +++++++	******* */
+    .section-allSchools {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f8f8f8ee;
+    }
+    .all-programs {
+        display: flex;
+        justify-content: center;
+        padding: 1.2rem;
+        margin-top: 25px;
+    }
+    .vls-schLogo {
+        height: 6rem;
+        width: 6rem;
+        fill: var(--color-primary-3);
+        margin-right: 20px;
+    }
+    .vls-sch-title {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .vls-segments {
+        border: 1px solid rgba(129, 127, 127, .65);
+        border-radius: 25px;
+        text-align: center;
+        padding: 1.5% .8%;
+        margin-right: 3rem;	
+        width: 22.5%;
+        transition: transform .6s;
+        box-shadow: 3px 5px 10px #5a5a5ae2;
+    }
+    .vls-segments:hover {transform: translateY(-1.3rem) scale(1.07);}
+    .vls-segments:last-child {	margin-right: 0px;}
+
+    /* General Style Usage */
+    .sch-items {
+        margin: 2rem
+    }
+    .sch-titles {	font-weight: 400;}
+
+    .vls-img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+        display: block;
+        transition: transform .8s;
+    }
+
+    .vls-img:hover { transform: translateY(-1.1rem) scale(1.05);}
+    .vls-values {
+        font-size: 1.5rem;
+        line-height: 2.9rem;
+        margin: 20px 0px 35px 0px;
+        text-align: left;
+        padding: 1.5%;
+    }
+    .grad-cap {
+        color: var(--color-primary-3);
+        background-color: #eff1ed;
+        font-size: 125%;
+        border-radius: 8px;
+        margin-right: 4px;
+    }
+    .btn-schools:link,
+    .btn-schools:visited {
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 6px;
+        font-size: 180%;
+        font-weight: 500;
+        color: var(--color-text-5);
+        background-color: var(--color-primary-3);
+        text-decoration: none;
+        transition: background-color 0.2s, border 0.2s, color 0.2s;
+        box-shadow: 5px 5px 10px #5a5a5ae2;
+    }
+    .btn-schools:hover,
+    .btn-schools:active {
+        background-color: var(--color-background-4);
+        color: var(--color-primary-1);
+        transition: all .2s;
+        transform: scaleY(1.05);
+        border: 1.7px solid var(--color-primary-1);
+    }
+
+    
+    
+}
+
+@media only screen and (max-width: 338px) {
+    h1 {  font-size: 1.5rem; }
+    .leaders { font-size: 1.15rem;}
+    .call-box,
+    .contact-m{font-size: 1.1rem;}
+    .mail-icon, 
+    .call-icon {
+        height: 1.1rem;
+        width: 1.rem;
+    }
+    
 }
