@@ -613,7 +613,7 @@ VICKY LAWRENCE SCHOOLS
 /* +++++++	*******  
 NEWS AND EVENTS
 +++++++	******* */
-.all-ourAwards { margin: 30PX;}
+.all-ourAwards { margin: 30px;}
 .all-awards {
 	display: flex;
 	justify-content: center;
@@ -675,7 +675,6 @@ PARENT TESTIMONIALS
 
 .testimonial-items {
 	text-align: center;
-	/* width: auto; */
 	padding: 1% 5%;
 }
 
@@ -683,14 +682,13 @@ PARENT TESTIMONIALS
 	font-size: 18px;
 	margin-bottom: 20px;
 	letter-spacing: .2px;
-	line-height: 30px;
 }
 
 .testimonial-items h4 {
 	font-size: 13px;
 	margin: 13px 0px 1px 0px;
 	letter-spacing: .2px;
-	line-height: 10px;
+	line-height: 1.5;
 }
 cite { display: block;}
 
@@ -706,7 +704,7 @@ cite { display: block;}
 /* +++++++	*******  
 NEWSLETTER
 +++++++	******* */
-.section-newsletter {	margin-bottom: 4%;}
+.section-newsletter { margin-bottom: 4%;}
 .subscribed {
 	padding: 4%;
 	margin-left: 18px;
@@ -852,21 +850,6 @@ input{
 	background-color:var(--color-primary-a);
 	color: var(--color-background-5);
 	cursor: pointer;
-}
-
-/* +++++++	*******  
-MEDIA QUERIES FOR CONTACT
-+++++++	******* */
-@media (max-width: 768px){
-
-	#contact-section .contact-form{
-	display: block;
-		width: 100%;
-		text-align: center;
-	}
-	#contact-section .submit{
-		width: 60%;
-	}
 }
 
 /*	+++++++	*******  
