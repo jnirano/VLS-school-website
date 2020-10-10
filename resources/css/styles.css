@@ -131,7 +131,7 @@ h3 {
 .header-contact {
 	background-color: var(--color-background-5);
 	height: 5em;
-	padding: .5rem 6rem;
+	padding: .7rem 6rem;
 }
 .header-contact,
 .call-us,
@@ -682,6 +682,7 @@ PARENT TESTIMONIALS
 	font-size: 18px;
 	margin-bottom: 20px;
 	letter-spacing: .2px;
+	line-height: 1.8;
 }
 
 .testimonial-items h4 {
