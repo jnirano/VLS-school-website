@@ -299,7 +299,7 @@ header {
 	font-weight: 600;
 	letter-spacing: 0.1px;
 	color:var(--color-background-4);
-	font-size:18px;
+	font-size: 18px;
 	text-decoration: none;
 	position: relative;
 	transition: color 0.3s ease;
@@ -369,11 +369,11 @@ header {
 	text-transform: initial;
 }
 
-@media(max-width: 991px){
+/* @media(max-width: 991px){
 	.navbar .navbar-nav ul > li{
 		margin:0 15px;
 	}
-}
+} */
 
 @media(max-width: 767px){
 	.navbar{
@@ -430,7 +430,7 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 7% auto;
+	margin: 15% auto;
 }
 
 .vls { color: var(--color-primary-1);}
@@ -631,11 +631,15 @@ NEWS AND EVENTS
 	border: 1px solid rgba(129, 127, 127, .65);
 	border-radius: 25px;
 	text-align: center;
-	padding: 3% 1%;
-	margin-right: 3rem;	
+	padding: 3% 1%;	
 	width: 25%;
 	transition: transform .4s;
 	box-shadow: 1px 7px 13px #5a5a5ae2;
+}
+.high-sch-award:not(:last-child),
+.admissions:not(:last-child),
+.tech-awards:not(:last-child) {
+	margin-right: 3rem;	
 }
 .high-sch-award:hover, 
 .admissions:hover,
@@ -746,7 +750,7 @@ NEWSLETTER
 
 .para .subs-1:focus ~ span,
 .para .subs-1:valid ~ span {
-	transform: translateX(-20px) translateY(-50px); /*Floating text*/
+	transform: translateX(-20px) translateY(-55px); /*Floating text*/
 	font-size: 150%;
 }
 .now-subs {	display: flex}
@@ -803,12 +807,22 @@ CONTACT US
 .contact-form{
 	display: grid;
 	grid-template-columns: auto auto;
+	
 }
+/* .contact-form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.map-contact {
+	flex: 50%;
+} */
 
-.forms-fill {	margin-left: 8%;}
+/* .forms-fill {	margin-left: 8%;} */
+.forms-fill {	margin-left: 1%;}
 .inputs-form {
 	margin:10px;
-	width: 80%;
+	width: 75%;
 	border-radius: 4px; 
 	background-color: #f8f8f8ee;
 	border: 1px solid rgba(136, 133, 133, .5);
@@ -820,7 +834,7 @@ input{
 	outline:none;
 }
 .textArea {
-	width: 80%;
+	width: 75%;
 	padding: 10px;
 	margin: 0px 10px 10px 10px;  
 	font-size: 1.85rem;
@@ -830,7 +844,7 @@ input{
 	outline: none;
 }
 .submit{
-	width: 25%;
+	width: 20%;
 	padding: 4px;
 	font-size: 16px;
 	font-weight: bold;
@@ -858,7 +872,7 @@ FOOTER
 *******		+++++++	*/
 footer {
 	background-color: #212529;
-	padding: 60px;
+	padding: 40px;
 	font-size: 1.34rem;
 }
 .footer-navigation {

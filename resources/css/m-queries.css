@@ -1,59 +1,155 @@
 /* Big tablet to 1200px (widths smaller taht the 1140px row) */
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
     .hero-text-box {
         width: 100%;
         padding: 0 2%;
     }
     
     .row { padding: 0 2%; }
-}
-
-
+} */
 
 /* Small tablet to big tablet:- from 768px to 1023px . This will target IPad in the protrate mode but IPad in landscape view has 1024px */
 @media only screen and (max-width: 1023px) {
     /* +++++++	*******  
     HEADER: HOME PAGE
     +++++++	******* */
-    
+    .header-contact { padding: 1rem }
+    .mail-icon, 
+    .call-icon {
+        height: 1.35rem;
+        width: 1.35rem;
+    }
+    .call-us{ margin-left: 1.6rem; margin-right: auto;}
+    .call-box{font-size: 1.5rem; letter-spacing: .5px;}
+    .mail-us { 
+        margin-left: .74rem;
+        font-size: 1.5rem;
+        letter-spacing: .5px;
+    }
+    .links-icon {
+        height: 2.5rem;
+        width: 2.5rem;
+    } 
+    .links:not(:last-child) { margin-right: 1.5rem;}
+    .navbar{	padding: 5px;}
+    .nav-row{ margin: 0% 1% 0% 1.5%;}
+    .logo a .logo-brand {
+        height: 90px;
+        margin-top: 25%;        
+    }
+    .navbar-nav { top: 10%;}
+    .navbar .navbar-nav ul > li > a{
+        padding:20px 0;
+        font-weight: 550;
+        font-size:15px;
+    }
+    .navbar .navbar-nav ul > li{ margin:0 10px; }
+    .text-box { margin: 9% auto;}
+    h1 { 
+        font-size: 3.5rem;
+        word-spacing: 1.4px;
+        margin-top: 75px;
+    }
+    .btn:link,
+    .btn:visited {
+        padding: 10px 20px;
+        font-size: 145%;
+        font-weight: 550;
+    }
     
     /* +++++++	*******  
     ABOUT VICKY LAWRENCE SCHOOLS
     +++++++	******* */
-    
-    
+    h3 {
+        font-size: 2rem;
+        margin: 20px 0 8px 10px;
+        line-height: 1.6;
+    }
+    .principal-brief{
+        margin-top: 3%;
+        flex-direction: column;
+    }
+    .principal {
+        width: 100%;
+        margin-left: 0%;
+        letter-spacing: .5px;	
+    }
+    .paragraphs {
+        font-size: 1.3rem;
+        line-height: 2.1;
+        width: 100%;
+        padding: 0 2% ;
+    }
+    .btn-read{
+        margin: 3%;
+        letter-spacing: .8px;
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+   
     /* +++++++	*******  
     VICKY LAWRENCE SCHOOLS
     +++++++	******* */
-    
-    
+    .all-programs { margin-top: 5px; }
+    .vls-segments h3 {font-size: 1.7rem;}
+    .btn-schools:link,
+    .btn-schools:visited {
+        padding: 8.5px 10px;
+        margin-bottom: 10px;
+        font-size: 1.7rem;
+        font-weight: 400;
+        box-shadow: 0px 3px 10px #5a5a5ae2;
+    }
+    .btn-schools:hover,
+    .btn-schools:active {  transform: scaleY(1); }  
     /* +++++++	*******  
     NEWS & EVENTS
     +++++++	******* */
-    
-    
-    /* +++++++	*******  
-    PARENTS TESTIMONIALS
-    +++++++	******* */
-    
-    
+    .award-icons { margin-bottom: 1.2px; }
     
     /* +++++++	*******  
     NEWSLETTER
     +++++++	******* */
-    
-    
+    .subscribed { margin: 0 0 25px 18px; }
+    .para .subs-1 {
+        width: 50%;
+        padding: 2%;
+        margin-left:8%;
+        font-size: 2.3rem;
+    }
+    .para .subs-1:focus ~ span,
+    .para .subs-1:valid ~ span {
+        transform: translateX(-7px) translateY(-33px); /*Floating text*/
+        font-size: 1.6rem;
+    }
     
     /* +++++++	*******  
     CONTACT US
     +++++++	******* */
-    
+    .map-contact { padding: 2% 0 2% 2%;}
+   .forms-fill form {
+       margin-left: 3%;
+   }
     
     /* +++++++	*******  
     FOOTER
     +++++++	******* */
+    .footer-menu {
+        width: 200%;
+    }
+    .link-sicon {
+        height: 2.1rem;
+        width: 2.1rem;										
+    }
+    .footer-para {
+        text-align: center;
+        margin-top: 13px;
+    }
+    footer {
+        font-size: 1.24rem;
+        padding: 25px;
+    }
 
-   
 }
 
 /* Small phones to small tablets :- for width of smaller than the ipad of width 768px: from 481px to 767px */
@@ -128,38 +224,176 @@
         font-size: 1.5rem;
     }
 
-    
-
     /* +++++++	*******  
     VICKY LAWRENCE SCHOOLS
     +++++++	******* */
+    h2:after{ 
+        margin-top: 3px;
+        margin-bottom: 1.5px;
+    } 
+    .all-programs {
+        flex-direction: column;
+        padding: 0 1rem;
+        margin-top: 5px;
+    }
+    .sch-items { margin: 0rem;}
+    .vls-schLogo {
+        height: 4rem;
+        width: 4rem;
+        margin-right: 17px;
+    }
+    .vls-sch-title {
+        display: flex;
+        justify-content: center;
+    }
+    .vls-segments {
+        padding: 2%;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .vls-segments:hover {transform: translateY(-1.0rem) scale(1.0);}
 
+    
+    /* General Style Usage */
+    .sch-items {  margin: 0rem; }
+    .sch-titles { 
+        font-size: 1.8rem;
+        font-weight: 450;
+        margin-bottom: 22px;
+    }
+    .vls-img {
+        max-width: 98%;
+        height: auto;
+        border-radius: 4px;
+        margin: auto;
+    }
+    .vls-img:hover { transform: translateY(-1.1rem) scale(1.05);}
+    .vls-values {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        margin: 5px 0px 6px 0px;
+        padding: 1.2%;
+    }
+    .btn-schools:link,
+    .btn-schools:visited {
+        padding: 8.5px 10px;
+        margin-bottom: 10px;
+        font-size: 150%;
+        font-weight: 400;
+        box-shadow: 0px 3px 10px #5a5a5ae2;
+    }
+    .btn-schools:hover,
+    .btn-schools:active {  transform: scaleY(1); }   
 
     /* +++++++	*******  
     NEWS & EVENTS
     +++++++	******* */
-
-
+    .all-ourAwards { margin: 10px;}
+    .all-awards {
+        flex-direction: column-reverse;
+    }
+    .award-icons {
+        height: 4.2rem;
+        width: 4.2rem;
+        margin-bottom: 3px;
+    }
+    .award-type{
+        font-size: 1.85rem;
+    }
+    .vls-img {
+       max-width: 95%;
+       margin: 20px auto 1.4px auto;
+    }
+    .award-descriptions {
+        /* overflow: none; */
+        height: 142px;
+        font-size: 1.45rem;
+        padding: 2.1%;
+    }
+    .high-sch-award, 
+    .admissions,
+    .tech-awards {
+        padding: 3% 1%;
+        margin-bottom: 3.5rem;	
+        width: 100%;
+        box-shadow: 0px 7px 13px #5a5a5ae2; 
+    }
+   
     /* +++++++	*******  
     PARENTS TESTIMONIALS
     +++++++	******* */
-
-
+    .testimonies h2 { margin-bottom: 18px;}
+    .testimonial-items .our-pt  {
+        font-size: 1.65rem;
+        margin-bottom: 22px;
+        letter-spacing: .5px;
+        line-height: 1.72;
+    }
+    .testimonial-items h4 {
+        font-size: 1.3rem;
+        margin: 12px 0px 1px 0px;
+        line-height: 1.1;
+    }
 
     /* +++++++	*******  
     NEWSLETTER
     +++++++	******* */
-
-
+    /* .para {	position: relative;} */
+    .subscribed { margin: 0 0 25px 18px; }
+    .para .subs-1 {
+        width: 50%;
+        padding: 1.2%;
+        margin-left:8%;
+        font-size: 2.2rem;
+    }
+    .para .subs-1:focus ~ span,
+    .para .subs-1:valid ~ span {
+        transform: translateX(-7px) translateY(-33px); /*Floating text*/
+        font-size: 150%;
+    }
 
     /* +++++++	*******  
     CONTACT US
     +++++++	******* */
-
-
+   .map-contact { display: none;}
+   .forms-fill form {
+       margin-left: 7%;
+   }
+ 
+	#contact-section .submit{ width: 30%; }
+    input{
+        padding: 6px;
+        font-size: 1.15rem;
+        color: var(--color-text-2);
+        outline:none;
+    }
+    .inputs-form { width: 100%; }
+    .textArea {
+        width: 100%;
+        padding: 10px; 
+        font-size: 1.65rem;
+    }
+    .submit{
+        padding: .5px;
+        font-size: 13px;
+    }
+    
     /* +++++++	*******  
     FOOTER
     +++++++	******* */
+    .link-sicon {
+        height: 1.9rem;
+        width: 1.9rem;										
+    }
+    .footer-para {
+        color: #888;
+        text-align: center;
+        margin-top: 5px;
+    }
+    footer {
+        font-size: 1.12rem;
+        padding: 25px 15px;
+    }
 
 
 
@@ -214,6 +448,7 @@ HEADER: HOME PAGE
         align-items: center;
         margin: 40px 10px 10px 5px;
     }
+    .text-box { margin: 25% auto;}
     h1 {
         margin-top: 10px;
         margin-bottom: 50px;
@@ -354,7 +589,7 @@ HEADER: HOME PAGE
     .award-icons {
         height: 4rem;
         width: 4rem;
-        margin-bottom: 13px;
+        margin-bottom: 7px;
     }
     .high-sch-award, 
     .admissions,
@@ -400,22 +635,30 @@ HEADER: HOME PAGE
     /* +++++++	*******  
     NEWSLETTER
     +++++++	******* */
+    .subscribed {
+        font-size: 1.22rem;
+    }
     .para {	position: relative;}
     .para .subs-1 {
-        width: 50%;
+        width: 60%;
         padding: 1.2%;
-        margin-left:8%;
-        font-size: 100%;
+        margin-left:9%;
+        font-size: 93%;
     }
     .para span{
         position: absolute;
         top: .7px;
         left: .7px;
-        font-size: 115%;
+        font-size: 105%;
         padding: 1.35%;
         margin-left:8%;
         pointer-events: none;
         letter-spacing: .5px;
+    }
+    .subs-2{
+        width: 70px;
+        font-size: 110%;
+        padding: .5%;    
     }
 
     /* +++++++	*******  
@@ -427,13 +670,18 @@ HEADER: HOME PAGE
             width: 95%;
 		margin: auto;
 	}
-	#contact-section .submit{ width: 30%; }
+    #contact-section .submit{ width: 30%; }
+    .container p {
+        font-size: 1rem;
+    }
     input{
         padding: 6px;
         font-size: 1.15rem;
         color: var(--color-text-2);
         outline:none;
+        width: 50%;
     }
+    .inputs-form { width: 80%; }
     .textArea {
         width: 80%;
         padding: 10px; 
@@ -462,25 +710,4 @@ HEADER: HOME PAGE
         font-size: 1.21rem;
         padding: 23px;
     }
-
-}
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 338px) {
-    h1 {  font-size: 1.5rem; }
-    .leaders { font-size: 1.15rem;}
-    .call-box,
-    .contact-m{font-size: 1.1rem;}
-    .mail-icon, 
-    .call-icon {
-        height: 1.1rem;
-        width: 1.rem;
-    }
-    
 }
