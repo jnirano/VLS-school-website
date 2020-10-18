@@ -186,7 +186,6 @@ h3 {
 /* +++++++	*******  
 MAIN NAVIGATION BAR
 +++++++	******* */
-
 header {
 	height: 100vh;
 	background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, 0.45)), url(img/hs-building1.jpg);
@@ -196,9 +195,9 @@ header {
 }
 
 .logo a .logo-brand {
-	height: 95px;
+	height: 90px;
 	width: auto;
-	margin-top: 30%;
+	margin: 12% 0 12% 0;
 	border-radius: 50%;
 }
 
@@ -227,7 +226,7 @@ header {
 	top: 15px;
 }
 
-.navbar .navbar-nav-toggle{
+/* .navbar .navbar-nav-toggle{
 	height:30px;
 	width: 40px;
 	background-color: transparent;
@@ -237,22 +236,24 @@ header {
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-}
-.navbar .navbar-nav-toggle:focus{
+} */
+/* .navbar .navbar-nav-toggle:focus{
 	outline: none;
-}
-.navbar .navbar-nav-toggle span{
+} */
+/* Hambugar */
+/* .navbar .navbar-nav-toggle span{  
 	height: 2px;
 	width: 16px;
 	display: inline-block;
 	background-color: var(--color-background-4);
 	position: relative;
 	transition: all .3s ease;
-}
-.navbar .navbar-nav-toggle.close span{
+} */
+/* .navbar .navbar-nav-toggle.close span{
 	background-color: transparent;
-}
-.navbar .navbar-nav-toggle span::before{
+} */
+
+/* .navbar .navbar-nav-toggle span::before{
 	content: '';
 	position: absolute;
 	left:0;
@@ -262,8 +263,8 @@ header {
 	background-color: var(--color-background-4);
 	transform: translateY(-6px);
 	transition: all .3s ease;
-}
-.navbar .navbar-nav-toggle.close span::before{
+} */
+/* .navbar .navbar-nav-toggle.close span::before{
 	transform: translateY(0) rotate(45deg);
 }
 .navbar .navbar-nav-toggle span::after{
@@ -276,10 +277,10 @@ header {
 	background-color: var(--color-background-4);
 	transform: translateY(6px);
 	transition: all .3s ease;
-}
-.navbar .navbar-nav-toggle.close span::after{
+} */
+/* .navbar .navbar-nav-toggle.close span::after{
 	transform: translateY(0) rotate(-45deg);
-}
+} */
 .navbar .navbar-nav ul{
 	list-style: none;
 	margin:0;
@@ -294,13 +295,14 @@ header {
  margin-right:0;	
 }
 .navbar .navbar-nav ul > li > a{
-	padding:38.5px 0;
+	padding:23.5px 0;
 	display: block;
-	font-weight: 600;
+	font-weight: 450;
 	letter-spacing: 0.1px;
 	color:var(--color-background-4);
-	font-size: 18px;
+	font-size: 16px;
 	text-decoration: none;
+	text-align: center;
 	position: relative;
 	transition: color 0.3s ease;
 }
@@ -363,18 +365,59 @@ header {
 	background-color: var(--color-primary-3);
 	color:var(--color-background-4);
 }
-
-/*Responsive Navbar*/
-.sch-ads {
-	text-transform: initial;
+/*sticky Navigation bar on scroll*/
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: var(--color-background-5);
+	box-shadow: --shadow-dark 0 2rem 6rem rgba(0, 0, 0, .6);
+	z-index: 9999;
 }
 
-/* @media(max-width: 991px){
-	.navbar .navbar-nav ul > li{
-		margin:0 15px;
-	}
+.logo2-brand {
+	display: none;
+	height: 85px;
+	width: auto;
+	margin: 10% 0 10% 0;
+	border-radius: 50%;
+}
+.sticky .navbar-nav ul > li > a{
+	padding:  6px;
+	display: block;
+	font-weight: 450;
+	letter-spacing: 0.2px;
+	color:var(--color-text-3);
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: 30px;
+	position: relative;
+	transition: color 0.3s ease;
+}
+.sticky .logo-brand { display: none; }
+.sticky .logo2-brand { display: block; }
+
+
+/* .sticky.navbar .navbar-nav ul > li > a{
+	padding:38.5px 0;
+	display: block;
+	font-weight: 600;
+	letter-spacing: 0.1px;
+	color:var(--color-background-4);
+	font-size: 18px;
+	text-decoration: none;
+	position: relative;
+	transition: color 0.3s ease;
 } */
 
+
+/* .sch-ads {
+	text-transform: initial;
+} */
+
+/*
 @media(max-width: 767px){
 	.navbar{
 		padding:15px;
@@ -422,7 +465,7 @@ header {
  	color: var(--color-background-4);
  	padding:14px 20px 12px 40px;
  }
-}
+} */
 
 /*  ******* END DROP DOWN NAVIGATION *******  */
 .text-box {
@@ -871,7 +914,7 @@ input{
 FOOTER 
 *******		+++++++	*/
 footer {
-	background-color: #212529;
+	background-color: var(--color-background-5);
 	padding: 40px;
 	font-size: 1.34rem;
 }
