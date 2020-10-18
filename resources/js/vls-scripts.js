@@ -32,13 +32,49 @@ $(document).ready(function () {
 
             // Checking if the target was focused
             return false;
-            } else {         
-               $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-               $target.focus(); // Set focus again
-            };
+            }
          }); 
       }}
    });
+
+   /*  Animation when scrolling the website page */
+   $('.js--jq-plugin-wp-1').waypoint(function(direction) {
+      $('.js--jq-plugin-wp-1').addClass('animated fadeInUp');
+   }, {
+      offset: '50%'
+   });
+   $('.js--jq-plugin-wp-2').waypoint(function(direction) {
+      $('.js--jq-plugin-wp-2').addClass('animated fadeIn');
+   }, {
+      offset: '50%'
+   });
+   $('.js--jq-plugin-wp-3').waypoint(function(direction) {
+      $('.js--jq-plugin-wp-3').addClass('animated bounceInDown');
+   }, {
+      offset: '50%'
+   });
+   $('.js--jq-plugin-wp-4').waypoint(function(direction) {
+      $('.js--jq-plugin-wp-4').addClass('animated fadeInLeft');
+   }, {
+      offset: '50%'
+   });
+   $('.js--jq-plugin-wp-5').waypoint(function(direction) {
+      $('.js--jq-plugin-wp-5').addClass('animated fadeInRight');
+   }, {
+      offset: '50%'
+   });
+   $('.js--jq-plugin-wp-6').waypoint(function(direction) {
+      $('.js--jq-plugin-wp-6').addClass('animated pulse');
+   }, {
+      offset: '50%'
+   });
+   $('.js--jq-plugin-wp-7').waypoint(function(direction) {
+      $('.js--jq-plugin-wp-7').addClass('animated zoomIn');
+   }, {
+      offset: '50%'
+   });
+   
+
 
 
 });

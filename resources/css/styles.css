@@ -837,7 +837,7 @@ CONTACT US
 	color: #373f49;
 	width: 70%; 
 	margin: 3% auto;
-	padding-bottom: 3%;
+	padding-bottom: 1.5%;
 	letter-spacing:1.2px;
 	font-size: medium;
 }
@@ -951,16 +951,22 @@ footer {
 }
 
 /*********  ANIMATION EFFECT USING JQUERY & CSS To TRIGGER ANIMATIONS ********/
-.js--wp-b,
-.js--wp-1,
-.js--wp-c {
-  opacity: 1;
-  animation-duration: 1s;
+.js--jq-plugin-wp-1,
+.js--jq-plugin-wp-2,
+.js--jq-plugin-wp-3, 
+.js--jq-plugin-wp-4,
+.js--jq-plugin-wp-5
+.js--jq-plugin-wp-6,
+.js--jq-plugin-wp-7 {
+	opacity: 0;
+	animation-duration: 1s;
 }
-
-.js--wp-d.animated {  opacity: 1;}
-
-.js--wp-a,
-.js--wp-d,
-.js--wp-e,
-.js--wp-f.animated {  animation-duration: 1.5s;}
+.js--jq-plugin-wp-1.animated,
+.js--jq-plugin-wp-2.animated,
+.js--jq-plugin-wp-3.animated,
+.js--jq-plugin-wp-4.animated,
+.js--jq-plugin-wp-5.animated,
+.js--jq-plugin-wp-6.animated,
+.js--jq-plugin-wp-7.animated {
+	opacity: 1;
+}
