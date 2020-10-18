@@ -10,29 +10,34 @@ $(document).ready(function () {
    offset: '6opx;'
    });
 
-   /*Scroll on Button Click */
-   $('.js--scroll-to-vl-schools').click(function () { 
-      $('html, body').animate({scrollTop: $('.js--section-vl-schools').offset().top}, 1000);
-   });
-   
-   $('.js--scroll-to-events-news').click(function () { 
-      $('html, body').animate({scrollTop: $('.js--section-events-news').offset().top}, 1000);
-   });
-   
-   /*Navigation Scroll */
-   $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
+   /*Scroll on Button Click */  
+   $('a[href*="#"]') // Select all links with hashes
+   .not('[href="#"]').not('[href="#0"]').click(function(event) { // Remove links that don't actually link to anything
+   // On-page links
+   if (  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+         // Only prevent default if animation is actually gonna happen
+         event.preventDefault();
+         $('html, body').animate({
+            scrollTop: target.offset().top}, 1000, function() {
+            // Callback after animation
+            // Must change focus!
+            var $target = $(target);
+            $target.focus();
+            if ($target.is(":focus")) { 
+
+            // Checking if the target was focused
             return false;
-          }
-        }
-      });
+            } else {         
+               $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+               $target.focus(); // Set focus again
+            };
+         }); 
+      }}
    });
 
 

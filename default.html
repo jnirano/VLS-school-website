@@ -12,7 +12,7 @@
 		<title>Vicky Lawrence Schools</title>
 	</head>
 	<body>
-		<header class="header-nav">
+		<header class="header-nav" id="home-page">
 			<!-- Navigation bars -->
 			<div class="header-contact">
 				<div class="call-us">
@@ -62,40 +62,33 @@
 				<div class="container ">
 					<div class="nav-row justify-content-between align-items-center">
 						<div class="logo">
-							<a href="#">
+							<a href="#home-page">
 								<img src="./resources/css/img/logo-sch.jpg" alt="Vicky Lawrence logo" class="logo-brand">
 							</a>		
-							<a href="#">
+							<a href="#home-page">
 								<img src="./resources/css/img/logo2-sch.jpg" alt="Vicky Lawrence logo" class="logo2-brand">
 							</a>		
 						</div>
 
 						<div class="navbar-nav">
 							<ul>
-								<li><a href="#" class="menus">Home</a></li>
-								<li><a href="#" class="menus">About</a></li>
+								<li><a href="#home-page" class="menus">Home</a></li>
+								<li><a href="#about-us-section" class="menus">About</a></li>
 								<li class="dropdown">
-									<a href="#" class="sub-menu-toggle menus">Schools <svg class="down-arrow">
+									<a href="#vicky-lawrence-schools" class="sub-menu-toggle menus">Schools <svg class="down-arrow">
 										<use xlink:href="vendors/vls-icons/sprite.svg#icon-triangle-down"></use></svg>
 									</a>
 									<ul class="sub-menu">
-										<li><a href="#">Primary</a></li>
-										<li><a href="#">High School</a></li>
-										<li><a href="#">Vocational School</a></li>
-										<li><a href="#">Technology school</a></li>
+										<li><a href="#vl-schools">Primary</a></li>
+										<li><a href="#vl-schools">High School</a></li>
+										<li><a href="#vl-schools">Vocational School</a></li>
+										<li><a href="#vl-schools">Technology school</a></li>
 									</ul>
 								</li>
-								<li class="dropdown menus"><a href="#">Admissions <svg class="down-arrow">
-									<use xlink:href="vendors/vls-icons/sprite.svg#icon-triangle-down"></use> </svg>
-									</a>
-									<ul class="sub-menu sch-ads">
-										<li><a href="#">Primary</a></li>
-										<li><a href="#">High School</a></li>
-										<li><a href="#">Technology</a></li>
-									</ul>
+								<li class="dropdown menus"><a href="#sch-news">Admissions <svg class="down-arrow"></a>
 								</li>
-								<li><a href="#" class="menus">Testimonial</a></li>
-								<li><a href="#" class="menus">Contact Us</a></li>
+								<li><a href="#testimonials" class="menus">Testimonial</a></li>
+								<li><a href="#our-contact" class="menus">Contact Us</a></li>
 							</ul>
 						</div>
 					</div>
@@ -110,7 +103,7 @@
 		</header> <!-- END MAIN Navigation BAR -->
 
 		<!-- ABOUT OUR SCHOOLS -->
-		<section class="section-vls" id="abt-vls">
+		<section class="section-vls" id="about-us-section">
 			<article class="article-abtVls">
 				<div class="section-title">
 					<h2 class="section-title"> About Vicky Lawrence Schools <span class="underline-after"></span></h2>
@@ -147,7 +140,7 @@
 		</section>	<!-- END ABOUT OUR SCHOOLS -->
 		
 		<!-- VICKY LAWRENCE SCHOOLS -->
-		<section class="section-allSchools js--section-vl-schools" id="all-schools">
+		<section class="section-allSchools js--section-vl-schools" id="vl-schools">
 			<div class="vls-sch-title">
 				<svg class="vls-schLogo">
 					<use xlink:href="vendors/vls-icons/sprite.svg#icon-graduation-cap"></use>
@@ -157,7 +150,7 @@
 					
 			<div class="sch-items js--wp-1">
 				<div class="all-programs" >
-					<div class="vls-segments equal-1">
+					<div class="vls-segments equal-1" id="our-pry-sch">
 						<h3 class="sch-titles">
 							Primary School. 
 						</h3>
@@ -168,7 +161,7 @@
 						<a class="btn-schools btn-full " href="#">Visit School</a>
 					</div>
 
-					<div class="vls-segments equal-2">
+					<div class="vls-segments equal-2" id="our-high-sch">
 						<h3 class="sch-titles">
 							High School
 						</h3>
@@ -179,7 +172,7 @@
 						<a class="btn-schools btn-full " href="#">Visit School</a>
 					</div>
 
-					<div class="vls-segments equals-3">
+					<div class="vls-segments equals-3" id="our-v-sch">
 						<h3 class="sch-titles">
 							School of Vocations
 						</h3 class="">
@@ -190,7 +183,7 @@
 						<a class="btn-schools btn-full" href="#">Visit School</a>
 					</div>
 
-					<div class="vls-segments equal-4">
+					<div class="vls-segments equal-4" id="our-tech-sch">
 						<h3 class="sch-titles">
 							School of Technology
 						</h3 class="">
@@ -205,7 +198,7 @@
 		</section> <!-- END VICKY LAWRENCE SCHOOLS -->
 		
 		<!-- NEWS & EVENTS -->
-		<section class="section-awards js--section-events-news" id="all-schools">
+		<section class="section-awards js--section-events-news" id="sch-news">
 			<div class="vls-sch-title">
 				<h2> NEWS AND EVENTS <span class="underline-after"></span> </h2>
 			</div>
@@ -231,13 +224,13 @@
 							<use xlink:href="vendors/vls-icons/sprite.svg#icon-ticket"></use>
 						</svg> 
 						<h3 class="sch-admissions sch-titles">
-							Admission 
+							Admissions 
 						</h3>
 						<img src="resources/css/img/admission-flyer1.JPG"  alt="award photo" class="award-img vls-img photo">
 						<p class="award-descriptions vls-values">
 							The 2020/2021 academic session admission for JSS1 is currently on. Parents whose children have been offered admission can come to the school for their admission letters and other admission procedures.We say congratulations to all our new students.
 						</p>
-						<a class="btn-schools btn-full " href="#">Read more</a>
+						<a class="btn-schools btn-full " href="#">Register Now</a>
 					</div>
 					<div class=" tech-awards equal-3">
 						<svg class="award-icons">
@@ -257,7 +250,7 @@
 		</section> <!-- END NEWS & EVENTS -->
 
 		<!-- PARENTS TESTIMONIAL -->
-		<section class=" testimonies testimonials-section set-bg">
+		<section class=" testimonies testimonials-section set-bg" id="testimonials">
 			<h2> our parent testimonials <span class="underline-after"></span> </h2>
 			<div class="container">
 				<div class="testimonials-slider owl-carousel">
@@ -330,7 +323,7 @@
 		</section>	<!-- END SUBSCRIBE TO NEWS LETTER -->
 
 		<!-- CONTACT US -->
-		<section id="contact-section">
+		<section id="our-contact">
 			
 			<div class="container">
 				<h2>Contact Us <span class="underline-after"></span> </h2> 
