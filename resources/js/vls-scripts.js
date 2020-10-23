@@ -1,4 +1,5 @@
 $(document).ready(function () {
+   
    /*Sticky Navigation */
    $('.js--section-about').waypoint(function(direction) {
       if(direction == "down") {
@@ -7,7 +8,8 @@ $(document).ready(function () {
          $('nav').removeClass('sticky');
       }
    }, {
-   offset: '6opx;'
+
+      offset: '95px;'
    });
 
    /*Scroll on Button Click */  
@@ -38,11 +40,11 @@ $(document).ready(function () {
    });
 
    /*  Animation when scrolling the website page */
-   $('.js--jq-plugin-wp-1').waypoint(function(direction) {
-      $('.js--jq-plugin-wp-1').addClass('animated fadeInUp');
-   }, {
-      offset: '50%'
-   });
+   // $('.js--jq-plugin-wp-1').waypoint(function(direction) {
+   //    $('.js--jq-plugin-wp-1').addClass('animated fadeInUp');
+   // }, {
+   //    offset: '70%'
+   // });
    $('.js--jq-plugin-wp-2').waypoint(function(direction) {
       $('.js--jq-plugin-wp-2').addClass('animated fadeIn');
    }, {
@@ -69,12 +71,26 @@ $(document).ready(function () {
       offset: '50%'
    });
    $('.js--jq-plugin-wp-7').waypoint(function(direction) {
-      $('.js--jq-plugin-wp-7').addClass('animated zoomIn');
+      $('.js--jq-plugin-wp-7').addClass('animated pulse');
    }, {
-      offset: '50%'
+      offset: '60%'
    });
    
 
+   /* Mobile Navigation */
+   $('.js--mobile-nav-icon').click(function () {
+      let mobileNav = $('.navbar-nav-main');
+      let icon = $('.js--mobile-nav-icon .cross-mobile-icon');
 
+      mobileNav.slideToggle(200);
 
+      // Interchanging icon close and icon equalizer on click
+      if(icon.hasClass('my-mobile-icon')) {
+         icon.addClass(' icon-cross');
+         icon.removeClass(' my-mobile-icon');
+      } else {
+         icon.addClass('my-mobile-icon');
+         icon.removeClass('icon-cross');
+      }
+   });
 });
