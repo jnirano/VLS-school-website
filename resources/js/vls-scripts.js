@@ -80,17 +80,26 @@ $(document).ready(function () {
    /* Mobile Navigation */
    $('.js--mobile-nav-icon').click(function () {
       let mobileNav = $('.navbar-nav-main');
-      let icon = $('.js--mobile-nav-icon .cross-mobile-icon');
+      // let icon = $('.js--mobile-nav-icon .cross-mobile-icon');
+      let icon = $('.js--mobile-nav-icon i');
 
       mobileNav.slideToggle(200);
 
-      // Interchanging icon close and icon equalizer on click
-      if(icon.hasClass('my-mobile-icon')) {
-         icon.addClass(' icon-cross');
-         icon.removeClass(' my-mobile-icon');
+      // Toggle icon close and icon equalizer on click
+      // if(icon.hasClass('my-mobile-icon')) {
+      //    icon.addClass(' icon-cross');
+      //    icon.removeClass(' my-mobile-icon');
+      // } else {
+      //    icon.addClass('my-mobile-icon');
+      //    icon.removeClass('icon-cross');
+      // }
+      
+      if (icon.hasClass('ion-navicon-round')) {
+         icon.addClass('ion-close-round');
+         icon.removeClass('ion-navicon-round');
       } else {
-         icon.addClass('my-mobile-icon');
-         icon.removeClass('icon-cross');
-      }
+         icon.addClass('ion-navicon-round');
+         icon.removeClass('ion-close-round');
+      }   
    });
 });
