@@ -1,7 +1,8 @@
 /* 	TO DO LIST
 c. Fine-tune all scroll to start at the top of each of the section heading d. Optimization push
 e. Make the website accessible on internet using github
-f. General fine tuning of all the website sections and codes clean up.
+f. Optimize the website
+g. Validate html
 */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
@@ -187,7 +188,7 @@ MAIN NAVIGATION BAR
 +++++++	******* */
 header {
 	height: 100vh;
-	background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, 0.45)), url(img/hs-building1.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, .35), rgba(0, 0, 0, 0.45)), url(img/hs-6-building1.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -356,7 +357,7 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 15% auto;
+	margin: 12.5% auto;
 }
 
 .vls { color: var(--color-primary-1);}
@@ -652,7 +653,7 @@ NEWSLETTER
 	left: 0;
 	background: transparent; 
 	background-color: rgba(255, 255, 255, .8);
-	border: 1px solid #fcf;
+	border: 1px solid rgb(241, 126, 241);
 	width: 45%;
 	padding: 1.5%;
 	margin-left:8%;
@@ -663,7 +664,7 @@ NEWSLETTER
 	position: absolute;
 	top: 1px;
 	left: 1px;
-	font-size: 125%;
+	font-size: 135%;
 	padding: 1.5%;
 	margin-left:8%;
 	display: inline-block;

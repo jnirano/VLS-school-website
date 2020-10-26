@@ -35,11 +35,11 @@
         font-size:14.6px;
     }
     .navbar .navbar-nav ul > li{ margin:0 10px; }
-    .text-box { margin: 9% auto;}
+    .text-box { margin: 3% auto;}
     h1 { 
         font-size: 3rem;
         word-spacing: 1.3px;
-        margin-top: 65px;
+        margin-top: 45px;
     }
     .btn:link,
     .btn:visited {
