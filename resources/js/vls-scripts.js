@@ -9,10 +9,17 @@ $(document).ready(function () {
       }
    }, {
 
-      offset: '95px;'
+      offset: '20%;'
    });
 
-   /*Scroll on Button Click */  
+   /* Scroll on buttons Click */
+   $('.js--scroll-to-vl-schools').click(function () {
+      $('html, body').animate({scrollTop: $('.js--section-vl-schools').offset().top}, 1000); 
+   });
+   $('.js--scroll-to-events-news').click(function () {
+      $('html, body').animate({scrollTop: $('.js--section-events-news').offset().top}, 1000); 
+   });
+    
    $('a[href*="#"]') // Select all links with hashes
    .not('[href="#"]').not('[href="#0"]').click(function(event) { // Remove links that don't actually link to anything
    // On-page links
@@ -31,7 +38,6 @@ $(document).ready(function () {
             var $target = $(target);
             $target.focus();
             if ($target.is(":focus")) { 
-
             // Checking if the target was focused
             return false;
             }
@@ -39,12 +45,7 @@ $(document).ready(function () {
       }}
    });
 
-   /*  Animation when scrolling the website page */
-   // $('.js--jq-plugin-wp-1').waypoint(function(direction) {
-   //    $('.js--jq-plugin-wp-1').addClass('animated fadeInUp');
-   // }, {
-   //    offset: '70%'
-   // });
+   /*  Animation on scrolling the website page  Using JQuery Plugin (Waypoint)*/
    $('.js--jq-plugin-wp-2').waypoint(function(direction) {
       $('.js--jq-plugin-wp-2').addClass('animated fadeIn');
    }, {
@@ -56,9 +57,9 @@ $(document).ready(function () {
       offset: '50%'
    });
    $('.js--jq-plugin-wp-4').waypoint(function(direction) {
-      $('.js--jq-plugin-wp-4').addClass('animated fadeInLeft');
+      $('.js--jq-plugin-wp-4').addClass('animated pulse');
    }, {
-      offset: '50%'
+      offset: '20%'
    });
    $('.js--jq-plugin-wp-5').waypoint(function(direction) {
       $('.js--jq-plugin-wp-5').addClass('animated fadeInRight');
@@ -68,32 +69,21 @@ $(document).ready(function () {
    $('.js--jq-plugin-wp-6').waypoint(function(direction) {
       $('.js--jq-plugin-wp-6').addClass('animated pulse');
    }, {
-      offset: '50%'
+      offset: '40%'
    });
    $('.js--jq-plugin-wp-7').waypoint(function(direction) {
       $('.js--jq-plugin-wp-7').addClass('animated pulse');
    }, {
-      offset: '60%'
+      offset: '35%'
    });
-   
 
    /* Mobile Navigation */
    $('.js--mobile-nav-icon').click(function () {
       let mobileNav = $('.navbar-nav-main');
-      // let icon = $('.js--mobile-nav-icon .cross-mobile-icon');
       let icon = $('.js--mobile-nav-icon i');
 
       mobileNav.slideToggle(200);
 
-      // Toggle icon close and icon equalizer on click
-      // if(icon.hasClass('my-mobile-icon')) {
-      //    icon.addClass(' icon-cross');
-      //    icon.removeClass(' my-mobile-icon');
-      // } else {
-      //    icon.addClass('my-mobile-icon');
-      //    icon.removeClass('icon-cross');
-      // }
-      
       if (icon.hasClass('ion-navicon-round')) {
          icon.addClass('ion-close-round');
          icon.removeClass('ion-navicon-round');
